@@ -8,7 +8,7 @@ const checkCode = require('../utils/check-code');
 // This helps convert the id from string to ObjectId for the _id.
 const ObjectId = require("mongodb").ObjectId;
 
-// This will help us connect to the database
+// This will test the database connection
 const Client = require("../database/connect");
 Client.connect((error, db) => {
   if(db){
